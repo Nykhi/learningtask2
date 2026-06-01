@@ -1,0 +1,43 @@
+body {
+background-color: #FFFDD0;
+}
+
+#wrapper {
+    border: 1px solid #000;
+    background-color:#FFFDD0;
+    min-height: 100%;
+    margin: 5px; 
+
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF; 
+    background-color: #1B4D3E; 
+}
+
+.header {
+border: 1px solid #000;
+background-color: #ecf5eb;
+height: 300px; 
+}
+
+.main-navigation {
+    background-color: #1B4D3E;
+    height: 70px; 
+    text-align: center;
+    color: white; 
+    margin-top: 5px;  
+}
+.main-navigation a {
+   
+    text-align: center;
+    color: white; 
+    text-decoration: underline; 
+
+}
+.main-navigation a:hover {
+    color: white;
+    text-decoration: none; 
+    font-size: 20px; 
+}
