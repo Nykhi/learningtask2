@@ -1,0 +1,144 @@
+    body {
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        border: 1px solid #ccc;
+        background-color: white;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #content {
+        border: 1px solid #ccc;
+        background-color: white;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #087830;
+        margin-bottom: 15px;
+    }
+
+    .logo {
+        height: 200px;
+        width: auto;
+    }
+
+    .main-navigation {
+        display: flex;
+        gap: 25px;
+    }
+
+    .main-navigation a {
+        color: #087830;
+        text-decoration: none; 
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.2s ease;
+    }
+
+    .main-navigation a:hover {
+        color: #054d1f;
+        text-decoration: underline; 
+    }
+
+    h1 {
+        text-align: center;
+        color: #FFFFFF; 
+        background-color: #087830; 
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    h2 {
+        color: #087830;
+        margin-top: 30px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+        clear: both;
+    }
+
+    .enrollment-image {
+        width: 100%;
+        max-height: 600px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .news-image, .break-image, .pass-image {
+        float: left;
+        width: 32%;
+        margin-right: 2%;
+        height: 300px;
+        object-fit: cover;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .pass-image {
+        margin-right: 0;
+    }
+
+
+    #wrapper::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .aboutus-image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .mission-image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .gallery-image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .contact-image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .orgchart-image {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 20px;
+}
