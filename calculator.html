@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>.: Calculator :.</title>
+        <script>
+            function runCalculator() {
+                
+                let operation = prompt("Choose an operation: add, subtract, multiply, divide");
+
+         
+                let firstNum = prompt("Enter 1st number : ");
+                let secondNum = prompt("Enter 2nd number : ");
+
+           
+                let num1 = parseFloat(firstNum);
+                let num2 = parseFloat(secondNum);
+                let result = 0;
+
+         
+                if (operation == "add") {
+                    result = num1 + num2;
+                    alert("Answer is : " + result);
+                } 
+                else if (operation == "subtract") {
+                    result = num1 - num2;
+                    alert("Answer is : " + result);
+                } 
+                else if (operation == "multiply") {
+                    result = num1 * num2;
+                    alert("Answer is : " + result);
+                } 
+                else if (operation == "divide") {
+                    result = num1 / num2;
+                    alert("Answer is : " + result);
+                } 
+                else {
+                    alert("Invalid operation selected!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>calculator</h1>
+        <ol>
+            <li>Create a calculator using javascript</li>
+            <li>It should perform the following operations: add/subtract/divide/multiply</li>
+            <li>User can choose what operation</li>
+            <li>Display output in alert box</li>
+        </ol>
+
+        <button onclick="return runCalculator()">Open Calculator</button>
+    </body>
+</html>
