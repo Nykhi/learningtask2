@@ -3,17 +3,25 @@
     <head>
         <title>.: javascript 02 :.</title>
         <script>
+            // alert("you clicked refresh or reloaded the page.");
             // let name = prompt("What is your name?");
             // alert("My name is : " + name);
-            let firstNum = prompt("Enter 1st number : ");
-            let secondNum = prompt("Enter 2nd number : ");
+            
+            // let firstNum = prompt("Enter 1st number : ");
+            // let secondNum = prompt("Enter 2nd number : ");
+            // let sum = parseFloat(firstNum) + parseFloat(secondNum);
+            // alert("Answer is : " + sum);
 
-            let sum = parseFloat(firstNum) + parseFloat(secondNum);
+            function clickMe() {
+                let firstNum = prompt("Enter 1st number : ");
+                let secondNum = prompt("Enter 2nd number : ");
+                let sum = parseFloat(firstNum) + parseFloat(secondNum);
 
-            alert("Answer is : " + sum);
+                alert("Answer is : " + sum);
+            }
         </script>
     </head>
     <body>
-
+        <button onclick="return clickMe()">Click me to add 2 numbers</button>
     </body>
 </html>
