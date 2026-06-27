@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Case Study 06</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="header">
+                <h1>My Website</h1>
+            </div>
+            
+            <div class="main-navigation">
+                <a href="index.php">Home</a> /
+                <a href="index.php?page=projects">Projects</a> /
+                <a href="index.php?page=job-postings">Job Postings</a> /
+                <a href="index.php?page=testimonies">Testimonies</a> /
+                <a href="index.php?page=contact-us">Contact Us</a>
+            </div>
+
+            <div class="container">
+                <?php
+                    switch(@$_GET["page"])
+                    {
+                        case "projects":
+                            include("projects.php");
+                            break;
+                        case "job-postings":
+                            include("job-postings.php");
+                            break;
+                        case "testimonies":
+                            include("testimonies.php");
+                            break;
+                        case "contact-us":
+                            include("contact-us.php");
+                            break;
+                        default:
+                            include("home.php");
+                            break;
+                    }
+                ?>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2026 My Web Page Project</p>
+            </div>
+        </div>
+    </body>
+</html>
